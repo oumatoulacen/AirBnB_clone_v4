@@ -162,3 +162,9 @@ David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twit
 Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
+=======
+# AirBnB_clone_v4
+
+++++++
+db create insert data link
+curl -o 100-dump.sql "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/290/100-hbnb.sql"
