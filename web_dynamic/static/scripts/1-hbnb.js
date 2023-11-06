@@ -1,16 +1,16 @@
 $(document).ready(function () {
-  var amenities = {};
+  const amenities = {};
   $('input[type="checkbox"]').change(function () {
-  var amenityId = $(this).data('id');
-  var amenityName = $(this).data('name');
+    const amenityId = $(this).data('id');
+    const amenityName = $(this).data('name');
 
-  if (this.checked) {
-    amenities[amenityId] = amenityName;
-  } else {
-    delete amenities[amenityId];
-  }
-  var amenitiesList = Object.values(amenities).join(' ');
-  var $h_four = $('.amenities h4');
-  $h_four.text(amenitiesList);
-});
+    if (this.checked) {
+      amenities[amenityId] = amenityName;
+    } else {
+      delete amenities[amenityId];
+    }
+    const amenitiesList = Object.values(amenities).join(', ');
+    const $h_four = $('.amenities h4');
+    $h_four.text(amenitiesList);
+  });
 });
